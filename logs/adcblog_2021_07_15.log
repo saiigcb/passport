@@ -1,0 +1,1297 @@
+[2021-07-15 04:42:07,398][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 04:42:11,333][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_95748) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:12,114][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_84654) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:12,916][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_55636) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:16,618][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_88397) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:17,699][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_120956) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:19,619][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_60201) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:20,873][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_call_func_79138) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:23,952][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_119336) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:26,413][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_call_func_18466) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:28,404][TID-140616923301632][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_92005) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 04:42:49,380][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 04:42:49,380][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 04:42:49,380][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/Anand_Agrawal _front.jpg', 'reference_number': '1'}
+[2021-07-15 04:42:49,380][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:42:49,965][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:42:49,965][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:42:54,987][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:42:54,987][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:42:54,987][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:42:54,988][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.9986779, [0.18888342, 0.36142448, 0.240104, 0.48475507]], 'mrz_region': [0.9955708, [0.7527873, 0.034012705, 0.8962717, 0.96754146]], 'name': [0.7182891, [0.2732732, 0.36093956, 0.3229973, 0.5899349]]})
+[2021-07-15 04:42:54,988][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:42:54,996][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:42:54,996][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:42:56,197][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:42:56,197][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:42:56,197][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:42:56,197][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9817201, [0.75189924, 0.04905823, 0.8993137, 0.9516034]], 'surname': [0.964985, [0.19364825, 0.35502112, 0.24012238, 0.4825772]], 'name': [0.95500076, [0.27203548, 0.3566473, 0.32471448, 0.5890242]]})
+[2021-07-15 04:42:56,198][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 04:42:56,198][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 04:42:56,198][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.18888342, 0.36142448, 0.240104, 0.48475507], 'mrz_region': [0.7527873, 0.034012705, 0.8962717, 0.96754146], 'name': [0.27203548, 0.3566473, 0.32471448, 0.5890242]}
+[2021-07-15 04:42:56,198][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 04:42:56,603][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 04:42:57,772][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: AGRAWAL
+
+[2021-07-15 04:42:58,667][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<INDAGRAWAL<<ANAND<MOHANLAL<<<<<<<<<<<<<<<<
+Z4917286<0IND7902125M3006209<<<<<<<<<<<<<<<8
+
+[2021-07-15 04:42:58,692][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 04:42:58,864][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: ANANO MOHANLAL
+
+[2021-07-15 04:42:58,864][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 04:42:58,864][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'surname': 'AGRAWAL\n\x0c', 'mrz_surname': 'AGRAWAL', 'mrz_name': 'ANAND MOHANLAL', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '790212', 'mrz_expiry_date': '300620', 'mrz_document_number': 'Z4917286', 'name': 'ANANO MOHANLAL\n\x0c'}
+[2021-07-15 04:42:58,864][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'surname': 'AGRAWAL\n\x0c', 'mrz_surname': 'AGRAWAL', 'mrz_name': 'ANAND MOHANLAL', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '790212', 'mrz_expiry_date': '300620', 'mrz_document_number': 'Z4917286', 'name': 'ANANO MOHANLAL\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 04:42:58,864][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 04:43:31,912][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 04:43:31,912][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 04:43:31,912][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 04:43:31,912][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/Anand_Agrawal _front.jpg', 'reference_number': '1'}
+[2021-07-15 04:43:31,912][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:43:31,920][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:43:31,920][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:43:32,231][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:43:32,231][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:43:32,232][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:43:32,232][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.9986779, [0.18888342, 0.36142448, 0.240104, 0.48475507]], 'mrz_region': [0.9955708, [0.7527873, 0.034012705, 0.8962717, 0.96754146]], 'name': [0.7182891, [0.2732732, 0.36093956, 0.3229973, 0.5899349]]})
+[2021-07-15 04:43:32,232][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:43:32,242][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:43:32,244][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:43:32,308][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:43:32,308][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:43:32,309][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:43:32,309][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9817201, [0.75189924, 0.04905823, 0.8993137, 0.9516034]], 'surname': [0.964985, [0.19364825, 0.35502112, 0.24012238, 0.4825772]], 'name': [0.95500076, [0.27203548, 0.3566473, 0.32471448, 0.5890242]]})
+[2021-07-15 04:43:32,309][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 04:43:32,309][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 04:43:32,309][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.18888342, 0.36142448, 0.240104, 0.48475507], 'mrz_region': [0.7527873, 0.034012705, 0.8962717, 0.96754146], 'name': [0.27203548, 0.3566473, 0.32471448, 0.5890242]}
+[2021-07-15 04:43:32,309][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 04:43:32,314][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 04:43:32,652][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: AGRAWAL
+
+[2021-07-15 04:43:33,558][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<INDAGRAWAL<<ANAND<MOHANLAL<<<<<<<<<<<<<<<<
+Z4917286<0IND7902125M3006209<<<<<<<<<<<<<<<8
+
+[2021-07-15 04:43:33,559][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 04:43:33,915][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: ANANO MOHANLAL
+
+[2021-07-15 04:43:33,915][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 04:43:33,915][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'surname': 'AGRAWAL\n\x0c', 'mrz_surname': 'AGRAWAL', 'mrz_name': 'ANAND MOHANLAL', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '790212', 'mrz_expiry_date': '300620', 'mrz_document_number': 'Z4917286', 'name': 'ANANO MOHANLAL\n\x0c'}
+[2021-07-15 04:43:33,915][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'surname': 'AGRAWAL\n\x0c', 'mrz_surname': 'AGRAWAL', 'mrz_name': 'ANAND MOHANLAL', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '790212', 'mrz_expiry_date': '300620', 'mrz_document_number': 'Z4917286', 'name': 'ANANO MOHANLAL\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 04:43:33,915][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 04:43:38,389][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 04:43:38,389][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 04:43:38,389][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 04:43:38,389][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/Anand_Agrawal _front.jpg', 'reference_number': '1'}
+[2021-07-15 04:43:38,389][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:43:38,401][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:43:38,401][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:43:38,675][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:43:38,675][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:43:38,676][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:43:38,676][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.9986779, [0.18888342, 0.36142448, 0.240104, 0.48475507]], 'mrz_region': [0.9955708, [0.7527873, 0.034012705, 0.8962717, 0.96754146]], 'name': [0.7182891, [0.2732732, 0.36093956, 0.3229973, 0.5899349]]})
+[2021-07-15 04:43:38,676][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:43:38,685][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:43:38,685][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:43:38,747][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:43:38,747][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:43:38,748][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:43:38,748][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9817201, [0.75189924, 0.04905823, 0.8993137, 0.9516034]], 'surname': [0.964985, [0.19364825, 0.35502112, 0.24012238, 0.4825772]], 'name': [0.95500076, [0.27203548, 0.3566473, 0.32471448, 0.5890242]]})
+[2021-07-15 04:43:38,748][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 04:43:38,748][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 04:43:38,748][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.18888342, 0.36142448, 0.240104, 0.48475507], 'mrz_region': [0.7527873, 0.034012705, 0.8962717, 0.96754146], 'name': [0.27203548, 0.3566473, 0.32471448, 0.5890242]}
+[2021-07-15 04:43:38,748][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 04:43:38,752][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 04:43:38,937][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: AGRAWAL
+
+[2021-07-15 04:43:39,695][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<INDAGRAWAL<<ANAND<MOHANLAL<<<<<<<<<<<<<<<<
+Z4917286<0IND7902125M3006209<<<<<<<<<<<<<<<8
+
+[2021-07-15 04:43:39,696][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 04:43:39,902][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: ANANO MOHANLAL
+
+[2021-07-15 04:43:39,902][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 04:43:39,902][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'surname': 'AGRAWAL\n\x0c', 'mrz_surname': 'AGRAWAL', 'mrz_name': 'ANAND MOHANLAL', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '790212', 'mrz_expiry_date': '300620', 'mrz_document_number': 'Z4917286', 'name': 'ANANO MOHANLAL\n\x0c'}
+[2021-07-15 04:43:39,902][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'surname': 'AGRAWAL\n\x0c', 'mrz_surname': 'AGRAWAL', 'mrz_name': 'ANAND MOHANLAL', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '790212', 'mrz_expiry_date': '300620', 'mrz_document_number': 'Z4917286', 'name': 'ANANO MOHANLAL\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 04:43:39,903][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 04:47:14,719][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 04:47:14,719][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 04:47:14,719][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 04:47:14,719][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/rajesh_saxena_front.jpg', 'reference_number': '1'}
+[2021-07-15 04:47:14,720][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:47:14,753][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:47:14,754][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:47:15,031][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:47:15,031][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:47:15,031][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:47:15,031][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.999719, [0.20381488, 0.35288516, 0.24804986, 0.4621496]], 'name': [0.9995705, [0.2958095, 0.34731138, 0.34201446, 0.47625083]], 'mrz_region': [0.99901897, [0.76535916, 0.040305912, 0.933598, 0.9816889]]})
+[2021-07-15 04:47:15,032][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:47:15,041][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:47:15,042][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:47:15,102][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:47:15,102][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:47:15,103][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:47:15,103][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'surname': [0.9997608, [0.20087828, 0.34705412, 0.24558122, 0.4623261]], 'mrz_region': [0.98959625, [0.7760885, 0.030613482, 0.931829, 0.96221036]], 'name': [0.9723525, [0.2881552, 0.35415673, 0.33953542, 0.4689328]]})
+[2021-07-15 04:47:15,103][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 04:47:15,103][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 04:47:15,103][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.20381488, 0.35288516, 0.24804986, 0.4621496], 'name': [0.2958095, 0.34731138, 0.34201446, 0.47625083], 'mrz_region': [0.76535916, 0.040305912, 0.933598, 0.9816889]}
+[2021-07-15 04:47:15,103][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 04:47:15,109][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 04:47:15,302][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: SAXENA
+
+[2021-07-15 04:47:15,472][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: RAJESH
+
+[2021-07-15 04:47:16,265][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<INDSAXENA<<RAJESH<<<<<<<<<<<<<<<<<<<<<<<<<
+Z4369516<9IND6404253M2707129<<<<<<<<<<<<<<<2
+
+[2021-07-15 04:47:16,266][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 04:47:16,268][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 04:47:16,268][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'surname': 'SAXENA\n\x0c', 'name': 'RAJESH\n\x0c', 'mrz_surname': 'SAXENA', 'mrz_name': 'RAJESH', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '640425', 'mrz_expiry_date': '270712', 'mrz_document_number': 'Z4369516'}
+[2021-07-15 04:47:16,269][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'surname': 'SAXENA\n\x0c', 'name': 'RAJESH\n\x0c', 'mrz_surname': 'SAXENA', 'mrz_name': 'RAJESH', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '640425', 'mrz_expiry_date': '270712', 'mrz_document_number': 'Z4369516', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 04:47:16,269][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 04:50:12,338][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 04:50:12,338][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 04:50:12,338][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 04:50:12,338][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/sethu_front.jpg', 'reference_number': '1'}
+[2021-07-15 04:50:12,338][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:50:12,389][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:50:12,389][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:50:12,690][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:50:12,690][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:50:12,691][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:50:12,691][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9991764, [0.838293, 0.03421563, 0.98395616, 0.97265214]], 'name': [0.9991653, [0.3244143, 0.36127782, 0.38737798, 0.5108376]], 'surname': [0.9778855, [0.23349869, 0.36556226, 0.29339832, 0.61336964]]})
+[2021-07-15 04:50:12,691][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:50:12,703][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:50:12,703][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:50:12,762][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:50:12,762][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:50:12,762][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:50:12,762][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.97419107, [0.8219832, 0.044058293, 0.96587086, 0.9355432]], 'name': [0.97107077, [0.3254779, 0.36376822, 0.38823003, 0.5107567]], 'surname': [0.92141616, [0.22971997, 0.35728732, 0.28861907, 0.6022577]]})
+[2021-07-15 04:50:12,763][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 04:50:12,763][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 04:50:12,763][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.838293, 0.03421563, 0.98395616, 0.97265214], 'name': [0.3244143, 0.36127782, 0.38737798, 0.5108376], 'surname': [0.23349869, 0.36556226, 0.29339832, 0.61336964]}
+[2021-07-15 04:50:12,763][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 04:50:12,766][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 04:50:13,172][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: 
+[2021-07-15 04:50:13,172][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check unsuccessful
+[2021-07-15 04:50:13,314][TID-140616923301632][ERROR][logger.exception_handler:55]-MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 174, in recognize_character
+    td3 = TD3CodeChecker(tesseract_output[0:89])
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/checker/td3.py", line 85, in __init__
+    check.precheck("TD3", mrz_code, 89)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/base/string_checkers.py", line 100, in precheck
+    if check_string(_check_upper(string)) and len(string) != length:
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/base/string_checkers.py", line 130, in _check_upper
+    raise FieldError("String contains invalid characters. Must be upper.", string)
+mrz.base.errors.FieldError: ('String contains invalid characters. Must be upper.', '\x0c')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 188, in recognize_character
+    raise MRZNotValid("MRZ detected is not valid. Check image in the MRZ region")
+logger.custom_exceptions.MRZNotValid: MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+
+[2021-07-15 04:50:13,315][TID-140616923301632][DEBUG][logger.exception_handler:44]-final output: {'error_no': '103', 'error_description': 'MRZ not valid'}
+[2021-07-15 04:51:09,145][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 04:51:09,146][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 04:51:09,146][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 04:51:09,146][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/lesthoso.jpg', 'reference_number': '1'}
+[2021-07-15 04:51:09,146][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:51:09,283][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:51:09,284][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:51:09,558][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:51:09,558][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:51:09,559][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:51:09,559][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9984081, [0.7997014, 0.03461209, 0.9362226, 0.95257795]], 'surname': [0.9955411, [0.24219376, 0.3610942, 0.28415176, 0.4708573]], 'name': [0.99157286, [0.30350485, 0.36366048, 0.34655035, 0.46809772]]})
+[2021-07-15 04:51:09,559][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:51:09,576][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:51:09,576][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:51:09,628][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:51:09,629][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:51:09,629][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:51:09,629][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9942781, [0.7908449, 0.03865254, 0.9342773, 0.9756206]], 'surname': [0.9761709, [0.24274735, 0.35802725, 0.2829752, 0.4736416]], 'name': [0.9741871, [0.2996942, 0.35934934, 0.34437492, 0.4643962]]})
+[2021-07-15 04:51:09,629][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 04:51:09,630][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 04:51:09,630][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.7997014, 0.03461209, 0.9362226, 0.95257795], 'surname': [0.24219376, 0.3610942, 0.28415176, 0.4708573], 'name': [0.30350485, 0.36366048, 0.34655035, 0.46809772]}
+[2021-07-15 04:51:09,630][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 04:51:09,636][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 04:51:10,484][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<LSOMOSALA<<BULARA<<<<<<<<<<<<<<<<<<<<<<<<
+RC000798<9LSO6508151M2509286041167185520<<21
+
+[2021-07-15 04:51:10,485][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 04:51:10,681][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: MOSALA
+
+[2021-07-15 04:51:10,865][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: BULARA
+
+[2021-07-15 04:51:10,865][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 04:51:10,865][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'MOSALA', 'mrz_name': 'BULARA', 'mrz_country': 'LSO', 'mrz_sex': 'M', 'mrz_birth_date': '650815', 'mrz_expiry_date': '250928', 'mrz_document_number': 'RC000798', 'surname': 'MOSALA\n\x0c', 'name': 'BULARA\n\x0c'}
+[2021-07-15 04:51:10,865][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'MOSALA', 'mrz_name': 'BULARA', 'mrz_country': 'LSO', 'mrz_sex': 'M', 'mrz_birth_date': '650815', 'mrz_expiry_date': '250928', 'mrz_document_number': 'RC000798', 'surname': 'MOSALA\n\x0c', 'name': 'BULARA\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 04:51:10,865][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 04:52:00,515][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 04:52:00,516][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 04:52:00,516][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 04:52:00,516][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/pure-white.jpg', 'reference_number': '1'}
+[2021-07-15 04:52:00,516][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:52:00,525][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:52:00,525][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:52:00,783][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:52:00,784][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:52:00,784][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:52:00,784][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {})
+[2021-07-15 04:52:00,784][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:52:00,798][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:52:00,798][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:52:00,849][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:52:00,849][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:52:00,850][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:52:00,850][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9675566, [0.77433103, 0.0, 0.9232022, 0.8789389]]})
+[2021-07-15 04:52:00,850][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 04:52:00,850][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 04:52:00,850][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.77433103, 0.0, 0.9232022, 0.8789389]}
+[2021-07-15 04:52:00,850][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 04:52:00,853][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 04:52:00,968][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: 
+[2021-07-15 04:52:00,968][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check unsuccessful
+[2021-07-15 04:52:00,969][TID-140616923301632][ERROR][logger.exception_handler:55]-MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 174, in recognize_character
+    td3 = TD3CodeChecker(tesseract_output[0:89])
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/checker/td3.py", line 85, in __init__
+    check.precheck("TD3", mrz_code, 89)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/base/string_checkers.py", line 100, in precheck
+    if check_string(_check_upper(string)) and len(string) != length:
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/base/string_checkers.py", line 130, in _check_upper
+    raise FieldError("String contains invalid characters. Must be upper.", string)
+mrz.base.errors.FieldError: ('String contains invalid characters. Must be upper.', '\x0c')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 188, in recognize_character
+    raise MRZNotValid("MRZ detected is not valid. Check image in the MRZ region")
+logger.custom_exceptions.MRZNotValid: MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+
+[2021-07-15 04:52:00,969][TID-140616923301632][DEBUG][logger.exception_handler:44]-final output: {'error_no': '103', 'error_description': 'MRZ not valid'}
+[2021-07-15 04:54:28,592][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 04:54:28,593][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 04:54:28,593][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 04:54:28,593][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/samar_front.jpg', 'reference_number': '1'}
+[2021-07-15 04:54:28,593][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:54:28,608][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:54:28,608][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:54:28,888][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:54:28,888][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:54:28,889][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:54:28,889][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9964073, [0.76853466, 0.032500178, 0.9102831, 0.95741713]], 'name': [0.99493647, [0.3004196, 0.35479397, 0.35366684, 0.6616767]], 'surname': [0.99286526, [0.22291474, 0.3453555, 0.26804423, 0.43436682]]})
+[2021-07-15 04:54:28,889][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 04:54:28,903][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 04:54:28,904][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 04:54:28,951][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 04:54:28,951][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 04:54:28,951][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 04:54:28,951][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'surname': [0.9999609, [0.22434558, 0.3431583, 0.26919243, 0.42958325]], 'mrz_region': [0.9917009, [0.7494158, 0.049334705, 0.88329226, 0.9314501]], 'name': [0.9591851, [0.30279773, 0.3433654, 0.3573143, 0.6510289]]})
+[2021-07-15 04:54:28,951][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 04:54:28,952][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 04:54:28,952][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.76853466, 0.032500178, 0.9102831, 0.95741713], 'name': [0.3004196, 0.35479397, 0.35366684, 0.6616767], 'surname': [0.22291474, 0.3453555, 0.26804423, 0.43436682]}
+[2021-07-15 04:54:28,952][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 04:54:28,957][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 04:54:29,766][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<INDDALVI<<SAMAR<ABDUS<SHAKOOR<<<<<<<<<<<<<
+U1009826<0IND8106104F2910035<<<<<<<<<<<<<<<8
+
+[2021-07-15 04:54:29,767][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 04:54:29,966][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: SAMAR ABDUS SHAKOOR
+
+[2021-07-15 04:54:30,139][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: DALVI
+
+[2021-07-15 04:54:30,139][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 04:54:30,139][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'DALVI', 'mrz_name': 'SAMAR ABDUS SHAKOOR', 'mrz_country': 'IND', 'mrz_sex': 'F', 'mrz_birth_date': '810610', 'mrz_expiry_date': '291003', 'mrz_document_number': 'U1009826', 'name': 'SAMAR ABDUS SHAKOOR\n\x0c', 'surname': 'DALVI\n\x0c'}
+[2021-07-15 04:54:30,139][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'DALVI', 'mrz_name': 'SAMAR ABDUS SHAKOOR', 'mrz_country': 'IND', 'mrz_sex': 'F', 'mrz_birth_date': '810610', 'mrz_expiry_date': '291003', 'mrz_document_number': 'U1009826', 'name': 'SAMAR ABDUS SHAKOOR\n\x0c', 'surname': 'DALVI\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 04:54:30,140][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:33:16,284][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:33:16,284][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:33:16,285][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:33:16,285][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/3.jpg', 'reference_number': '1'}
+[2021-07-15 05:33:16,285][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:33:16,289][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:33:16,289][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Software (305) - type: string (2) Tag Location: 34 - Data Location: 50 - value: b'Shotwell 0.28.4\x00'
+[2021-07-15 05:33:16,290][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ExifIFD (34665) - type: long (4) - value: b'B\x00\x00\x00'
+[2021-07-15 05:33:16,311][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:33:16,311][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:33:16,557][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:33:16,557][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:33:16,557][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:33:16,557][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.99956906, [0.81801695, 0.04105884, 0.97005606, 0.9506872]], 'surname': [0.9632915, [0.24692807, 0.33466858, 0.28870896, 0.55254257]], 'name': [0.9112812, [0.33806044, 0.33730447, 0.3824818, 0.48113745]]})
+[2021-07-15 05:33:16,557][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:33:16,558][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:33:16,558][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Software (305) - type: string (2) Tag Location: 34 - Data Location: 50 - value: b'Shotwell 0.28.4\x00'
+[2021-07-15 05:33:16,558][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ExifIFD (34665) - type: long (4) - value: b'B\x00\x00\x00'
+[2021-07-15 05:33:16,570][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:33:16,570][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:33:16,619][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:33:16,619][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:33:16,619][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:33:16,619][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'name': [0.99632215, [0.33363155, 0.33444607, 0.37729773, 0.4751807]], 'surname': [0.99280655, [0.24681732, 0.33124724, 0.28855976, 0.55239475]], 'mrz_region': [0.97296494, [0.82015514, 0.0254533, 0.9935293, 0.9425378]]})
+[2021-07-15 05:33:16,619][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:33:16,619][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:33:16,620][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.81801695, 0.04105884, 0.97005606, 0.9506872], 'surname': [0.24692807, 0.33466858, 0.28870896, 0.55254257], 'name': [0.33806044, 0.33730447, 0.3824818, 0.48113745]}
+[2021-07-15 05:33:16,620][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:33:16,625][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:33:17,453][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: STND50MASUNDARA<<MUTHURA4<<<<<<<<<<<<<<<<<
+2160403<5IND99014 TB88M29081B8<<<<<<0V9000000
+
+[2021-07-15 05:33:17,453][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check unsuccessful
+[2021-07-15 05:33:17,454][TID-140616923301632][ERROR][logger.exception_handler:55]-MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 174, in recognize_character
+    td3 = TD3CodeChecker(tesseract_output[0:89])
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/checker/td3.py", line 85, in __init__
+    check.precheck("TD3", mrz_code, 89)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/base/string_checkers.py", line 103, in precheck
+    raise FieldError("%s contains invalid characters" % document_description, s)
+mrz.base.errors.FieldError: ('TD3 contains invalid characters', 'STND50MASUNDARA<<MUTHURA4<<<<<<<<<<<<<<<<<2160403<5IND99014 TB88M29081B8<<<<<<0V9000000')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 188, in recognize_character
+    raise MRZNotValid("MRZ detected is not valid. Check image in the MRZ region")
+logger.custom_exceptions.MRZNotValid: MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+
+[2021-07-15 05:33:17,454][TID-140616923301632][DEBUG][logger.exception_handler:44]-final output: {'error_no': '103', 'error_description': 'MRZ not valid'}
+[2021-07-15 05:33:51,445][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:33:51,445][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:33:51,445][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:33:51,445][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/2.jpg', 'reference_number': '1'}
+[2021-07-15 05:33:51,445][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:33:51,446][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 134 - value: b'Xiaomi\x00'
+[2021-07-15 05:33:51,446][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 142 - value: b'Redmi Note 5 Pro\x00'
+[2021-07-15 05:33:51,446][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:33:51,447][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: XResolution (282) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+[2021-07-15 05:33:51,447][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: YResolution (283) - type: rational (5) Tag Location: 70 - Data Location: 168 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+[2021-07-15 05:33:51,447][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+[2021-07-15 05:33:51,447][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Software (305) - type: string (2) Tag Location: 94 - Data Location: 176 - value: b'Shotwell 0.28.4\x00'
+[2021-07-15 05:33:51,447][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: YCbCrPositioning (531) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:33:51,447][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ExifIFD (34665) - type: long (4) - value: b'\xc0\x00\x00\x00'
+[2021-07-15 05:33:51,447][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: GPSInfoIFD (34853) - type: long (4) - value: b'\xa2\x02\x00\x00'
+[2021-07-15 05:33:51,534][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:33:51,534][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:33:51,906][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:33:51,906][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:33:51,907][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:33:51,908][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.99877274, [0.7635756, 0.03559941, 0.89248633, 0.966405]], 'surname': [0.9911546, [0.2501863, 0.34810752, 0.29523304, 0.52468693]], 'name': [0.9893429, [0.34165153, 0.34807867, 0.38683414, 0.5770192]]})
+[2021-07-15 05:33:51,908][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:33:51,908][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 134 - value: b'Xiaomi\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 142 - value: b'Redmi Note 5 Pro\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: XResolution (282) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: YResolution (283) - type: rational (5) Tag Location: 70 - Data Location: 168 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Software (305) - type: string (2) Tag Location: 94 - Data Location: 176 - value: b'Shotwell 0.28.4\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: YCbCrPositioning (531) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ExifIFD (34665) - type: long (4) - value: b'\xc0\x00\x00\x00'
+[2021-07-15 05:33:51,909][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: GPSInfoIFD (34853) - type: long (4) - value: b'\xa2\x02\x00\x00'
+[2021-07-15 05:33:51,984][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:33:51,984][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:33:52,103][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:33:52,103][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:33:52,104][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:33:52,105][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'surname': [0.9949032, [0.2508881, 0.34410673, 0.29605502, 0.53322256]], 'name': [0.9900584, [0.3428067, 0.3463794, 0.38931185, 0.5664966]], 'mrz_region': [0.9846103, [0.77206063, 0.023343533, 0.89959407, 0.9533341]]})
+[2021-07-15 05:33:52,105][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:33:52,105][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:33:52,105][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.7635756, 0.03559941, 0.89248633, 0.966405], 'surname': [0.2501863, 0.34810752, 0.29523304, 0.52468693], 'name': [0.34165153, 0.34807867, 0.38683414, 0.5770192]}
+[2021-07-15 05:33:52,105][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:33:52,131][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:33:53,369][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<INDMANOHARAN<<ANUSUYA<DEVI<<<<<<<<<<<<<<<<
+R1000920<5IND6009050F2706085<<<<<<<<<<<<<<<6
+
+[2021-07-15 05:33:53,370][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:33:53,582][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: MANOHARAN
+
+[2021-07-15 05:33:53,800][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: ANUSUYA DEVI
+
+[2021-07-15 05:33:53,800][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:33:53,800][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'MANOHARAN', 'mrz_name': 'ANUSUYA DEVI', 'mrz_country': 'IND', 'mrz_sex': 'F', 'mrz_birth_date': '600905', 'mrz_expiry_date': '270608', 'mrz_document_number': 'R1000920', 'surname': 'MANOHARAN\n\x0c', 'name': 'ANUSUYA DEVI\n\x0c'}
+[2021-07-15 05:33:53,800][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'MANOHARAN', 'mrz_name': 'ANUSUYA DEVI', 'mrz_country': 'IND', 'mrz_sex': 'F', 'mrz_birth_date': '600905', 'mrz_expiry_date': '270608', 'mrz_document_number': 'R1000920', 'surname': 'MANOHARAN\n\x0c', 'name': 'ANUSUYA DEVI\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:33:53,800][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:34:22,025][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:34:22,026][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:34:22,026][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:34:22,026][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/china_nat_temp1_specimen_data.jpg', 'reference_number': '1'}
+[2021-07-15 05:34:22,026][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:34:22,072][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:34:22,072][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:34:22,347][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:34:22,347][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:34:22,348][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:34:22,348][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9999169, [0.8005884, 0.038068414, 0.9450083, 0.97795236]], 'surname': [0.9994359, [0.20037732, 0.36933416, 0.24736266, 0.46761578]], 'name': [0.9992883, [0.2875696, 0.41483754, 0.33555397, 0.5575774]]})
+[2021-07-15 05:34:22,348][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:34:22,363][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:34:22,363][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:34:22,418][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:34:22,418][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:34:22,419][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:34:22,419][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.99458253, [0.7852368, 0.031992108, 0.9285093, 0.9533516]], 'name': [0.98913807, [0.28778964, 0.41428736, 0.3339306, 0.55391276]], 'surname': [0.98212516, [0.19559895, 0.3735945, 0.246017, 0.45852074]]})
+[2021-07-15 05:34:22,419][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:34:22,419][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:34:22,419][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.8005884, 0.038068414, 0.9450083, 0.97795236], 'surname': [0.20037732, 0.36933416, 0.24736266, 0.46761578], 'name': [0.2875696, 0.41483754, 0.33555397, 0.5575774]}
+[2021-07-15 05:34:22,419][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:34:22,429][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:34:23,243][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: POCHNWANG<<YANGBEN<<<<<<<<<<<<<<<<<<<<<<<<<<
+G000000002CHN7504057F18083171920XXXX<<<<<<82
+
+[2021-07-15 05:34:23,244][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:34:23,438][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: 
+[2021-07-15 05:34:23,618][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: YANGBEN
+
+[2021-07-15 05:34:23,618][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:34:23,619][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'WANG', 'mrz_name': 'YANGBEN', 'mrz_country': 'CHN', 'mrz_sex': 'F', 'mrz_birth_date': '750405', 'mrz_expiry_date': '180831', 'mrz_document_number': 'G00000000', 'surname': '\x0c', 'name': 'YANGBEN\n\x0c'}
+[2021-07-15 05:34:23,619][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'WANG', 'mrz_name': 'YANGBEN', 'mrz_country': 'CHN', 'mrz_sex': 'F', 'mrz_birth_date': '750405', 'mrz_expiry_date': '180831', 'mrz_document_number': 'G00000000', 'surname': '\x0c', 'name': 'YANGBEN\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:34:23,619][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:34:54,079][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:34:54,079][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:34:54,080][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:34:54,080][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/colombia_nat_org_data_template6.jpg', 'reference_number': '1'}
+[2021-07-15 05:34:54,080][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:34:54,094][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:34:54,094][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:34:54,355][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:34:54,355][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:34:54,355][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:34:54,355][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.99990785, [0.16468298, 0.3186166, 0.21245244, 0.41962752]], 'mrz_region': [0.992053, [0.75417024, 0.053752452, 0.9050778, 0.9512923]], 'name': [0.98626184, [0.23962249, 0.31420302, 0.2835942, 0.57943255]]})
+[2021-07-15 05:34:54,355][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:34:54,367][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:34:54,367][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:34:54,414][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:34:54,415][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:34:54,415][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:34:54,415][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9944699, [0.7674259, 0.05803153, 0.92088544, 0.9545002]], 'surname': [0.98546445, [0.16440599, 0.31767452, 0.21355973, 0.42113906]], 'name': [0.9818715, [0.237866, 0.3120252, 0.28010064, 0.5685364]]})
+[2021-07-15 05:34:54,415][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:34:54,415][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:34:54,415][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.16468298, 0.3186166, 0.21245244, 0.41962752], 'mrz_region': [0.75417024, 0.053752452, 0.9050778, 0.9512923], 'name': [0.23962249, 0.31420302, 0.2835942, 0.57943255]}
+[2021-07-15 05:34:54,415][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:34:54,421][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:34:54,610][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: TOBON
+
+[2021-07-15 05:34:55,717][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<COLTOBON<<CLAUDIA<MARCELA<<<<<<<<<<<<<<<<<
+AV000000<3COL8505202F2705309CC4364573<<<<<64
+
+[2021-07-15 05:34:55,718][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:34:55,941][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: CLAUDIA MARCELA
+
+[2021-07-15 05:34:55,942][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:34:55,942][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'surname': 'TOBON\n\x0c', 'mrz_surname': 'TOBON', 'mrz_name': 'CLAUDIA MARCELA', 'mrz_country': 'COL', 'mrz_sex': 'F', 'mrz_birth_date': '850520', 'mrz_expiry_date': '270530', 'mrz_document_number': 'AV000000', 'name': 'CLAUDIA MARCELA\n\x0c'}
+[2021-07-15 05:34:55,942][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'surname': 'TOBON\n\x0c', 'mrz_surname': 'TOBON', 'mrz_name': 'CLAUDIA MARCELA', 'mrz_country': 'COL', 'mrz_sex': 'F', 'mrz_birth_date': '850520', 'mrz_expiry_date': '270530', 'mrz_document_number': 'AV000000', 'name': 'CLAUDIA MARCELA\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:34:55,942][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:35:10,147][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:35:10,147][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:35:10,147][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:35:10,147][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/UnitedStatesofAmerica_nat_org_data_templet9.jpg', 'reference_number': '1'}
+[2021-07-15 05:35:10,147][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:35:10,200][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:35:10,200][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:35:10,470][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:35:10,470][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:35:10,470][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:35:10,471][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.9998801, [0.2713317, 0.33715248, 0.32157406, 0.4459244]], 'surname': [0.99871665, [0.20322023, 0.3371924, 0.25053632, 0.47716597]], 'mrz_region': [0.9924536, [0.78812563, 0.030569255, 0.98106027, 1.0]]})
+[2021-07-15 05:35:10,471][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:35:10,490][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:35:10,490][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:35:10,543][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:35:10,543][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:35:10,544][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:35:10,544][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.99754906, [0.75649756, 0.020445585, 0.9481302, 0.9788277]], 'name': [0.99158376, [0.26923507, 0.33729276, 0.31955254, 0.44837978]], 'surname': [0.98507464, [0.20336899, 0.3361435, 0.25045377, 0.47272605]]})
+[2021-07-15 05:35:10,544][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:35:10,544][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:35:10,544][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.2713317, 0.33715248, 0.32157406, 0.4459244], 'surname': [0.20322023, 0.3371924, 0.25053632, 0.47716597], 'mrz_region': [0.78812563, 0.030569255, 0.98106027, 1.0]}
+[2021-07-15 05:35:10,544][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:35:10,555][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:35:10,742][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name:  
+
+HAPPY |
+
+[2021-07-15 05:35:10,922][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: “TRAVELER
+
+[2021-07-15 05:35:11,518][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<USATRAVELER<<HAPPY<<<<<<<<<<<<<<<<<<<<<<<<
+1 900000035USA56094 65M0811150<<<<<<<<<<<<<<08
+
+ 
+ 
+
+[2021-07-15 05:35:11,518][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check unsuccessful
+[2021-07-15 05:35:11,519][TID-140616923301632][ERROR][logger.exception_handler:55]-MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 174, in recognize_character
+    td3 = TD3CodeChecker(tesseract_output[0:89])
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/checker/td3.py", line 85, in __init__
+    check.precheck("TD3", mrz_code, 89)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/base/string_checkers.py", line 103, in precheck
+    raise FieldError("%s contains invalid characters" % document_description, s)
+mrz.base.errors.FieldError: ('TD3 contains invalid characters', 'P<USATRAVELER<<HAPPY<<<<<<<<<<<<<<<<<<<<<<<<1 900000035USA56094 65M0811150<<<<<<<<<<<<<<')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 188, in recognize_character
+    raise MRZNotValid("MRZ detected is not valid. Check image in the MRZ region")
+logger.custom_exceptions.MRZNotValid: MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+
+[2021-07-15 05:35:11,519][TID-140616923301632][DEBUG][logger.exception_handler:44]-final output: {'error_no': '103', 'error_description': 'MRZ not valid'}
+[2021-07-15 05:36:15,613][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:36:15,614][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:36:15,614][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:36:15,615][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/UnitedStatesofAmerica_nat_org_frontpage_templet4.jpg', 'reference_number': '1'}
+[2021-07-15 05:36:15,615][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:36:15,635][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:36:15,635][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:36:15,958][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:36:15,959][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:36:15,959][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:36:15,959][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.99978244, [0.24552922, 0.3376686, 0.2948199, 0.47693402]], 'mrz_region': [0.98818517, [0.784575, 0.08012238, 0.9305282, 0.9509615]], 'surname': [0.96453774, [0.1788866, 0.34031862, 0.22371066, 0.48217177]]})
+[2021-07-15 05:36:15,959][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:36:15,965][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:36:15,965][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:36:16,015][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:36:16,015][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:36:16,016][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:36:16,016][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'name': [0.9975084, [0.24610656, 0.33931118, 0.2971744, 0.47632408]], 'mrz_region': [0.9972391, [0.76272166, 0.05875936, 0.9190748, 0.9555733]], 'surname': [0.9950744, [0.1782351, 0.3374617, 0.22188003, 0.48831636]]})
+[2021-07-15 05:36:16,016][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:36:16,016][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:36:16,016][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.24552922, 0.3376686, 0.2948199, 0.47693402], 'mrz_region': [0.784575, 0.08012238, 0.9305282, 0.9509615], 'surname': [0.1788866, 0.34031862, 0.22371066, 0.48217177]}
+[2021-07-15 05:36:16,016][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:36:16,019][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:36:16,234][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: JOR:
+
+[2021-07-15 05:36:17,067][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<USAPUBLIC<<JOHN<Q<<<<<<<<<<<<<<<<<<<<<<<<<
+0132199289USA5002098M9705102<<<<<<<<<<<<<<<2
+
+[2021-07-15 05:36:17,068][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:36:17,306][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: PUALIC
+
+[2021-07-15 05:36:17,306][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:36:17,306][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'name': 'JOR:\n\x0c', 'mrz_surname': 'PUBLIC', 'mrz_name': 'JOHN Q', 'mrz_country': 'USA', 'mrz_sex': 'M', 'mrz_birth_date': '500209', 'mrz_expiry_date': '970510', 'mrz_document_number': '013219928', 'surname': 'PUALIC\n\x0c'}
+[2021-07-15 05:36:17,307][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'name': 'JOR:\n\x0c', 'mrz_surname': 'PUBLIC', 'mrz_name': 'JOHN Q', 'mrz_country': 'USA', 'mrz_sex': 'M', 'mrz_birth_date': '500209', 'mrz_expiry_date': '970510', 'mrz_document_number': '013219928', 'surname': 'PUALIC\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:36:17,307][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:36:55,501][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:36:55,501][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:36:55,502][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:36:55,502][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/Yemen_nat_org_frontpage_templet9.jpg', 'reference_number': '1'}
+[2021-07-15 05:36:55,502][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:36:55,510][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:36:55,510][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:36:55,789][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:36:55,789][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:36:55,789][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:36:55,789][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.99986815, [0.18978308, 0.33933306, 0.23661132, 0.46908486]], 'mrz_region': [0.9992152, [0.8239016, 0.034849614, 0.95894736, 0.9679558]], 'name': [0.9963956, [0.26624975, 0.34230584, 0.30871487, 0.6091197]]})
+[2021-07-15 05:36:55,789][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:36:55,798][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:36:55,799][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:36:55,843][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:36:55,843][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:36:55,843][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:36:55,844][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'surname': [0.9975836, [0.18825436, 0.34132814, 0.23674753, 0.4703049]], 'mrz_region': [0.9714947, [0.80405873, 0.041331172, 0.9507831, 0.9561647]], 'name': [0.9219277, [0.2622655, 0.34708297, 0.30704623, 0.5923915]]})
+[2021-07-15 05:36:55,844][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:36:55,844][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:36:55,844][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.18978308, 0.33933306, 0.23661132, 0.46908486], 'mrz_region': [0.8239016, 0.034849614, 0.95894736, 0.9679558], 'name': [0.26624975, 0.34230584, 0.30871487, 0.6091197]}
+[2021-07-15 05:36:55,844][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:36:55,848][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:36:56,044][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: Algi@HUFRI
+
+[2021-07-15 05:36:56,622][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: PRYEMALDHUFRI<<KHALED<ALI<ALI<AHMED<<<<<<<<<
+03219999<4YEM7201013M1605192<<<<<<<<<<<<<<08
+
+[2021-07-15 05:36:56,623][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:36:56,825][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: KHALED ALI ALI AHMED
+
+[2021-07-15 05:36:56,825][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:36:56,825][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'surname': 'Algi@HUFRI\n\x0c', 'mrz_surname': 'ALDHUFRI', 'mrz_name': 'KHALED ALI ALI AHMED', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '720101', 'mrz_expiry_date': '160519', 'mrz_document_number': '03219999', 'name': 'KHALED ALI ALI AHMED\n\x0c'}
+[2021-07-15 05:36:56,825][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'surname': 'Algi@HUFRI\n\x0c', 'mrz_surname': 'ALDHUFRI', 'mrz_name': 'KHALED ALI ALI AHMED', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '720101', 'mrz_expiry_date': '160519', 'mrz_document_number': '03219999', 'name': 'KHALED ALI ALI AHMED\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:36:56,826][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:37:13,061][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:37:13,061][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:37:13,061][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:37:13,061][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/Yemen_nat_org_frontpage_templet5.jpg', 'reference_number': '1'}
+[2021-07-15 05:37:13,061][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:37:13,084][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:37:13,084][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:37:13,335][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:37:13,335][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:37:13,336][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:37:13,336][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.9999433, [0.32504433, 0.33157256, 0.37182814, 0.49393567]], 'mrz_region': [0.9992038, [0.7942791, 0.043345243, 0.9256023, 0.9679909]], 'surname': [0.9958315, [0.24862736, 0.3320464, 0.29348835, 0.4080395]]})
+[2021-07-15 05:37:13,336][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:37:13,347][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:37:13,347][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:37:13,390][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:37:13,390][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:37:13,390][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:37:13,390][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9959817, [0.77840596, 0.038270205, 0.926766, 0.95529115]], 'surname': [0.9835657, [0.25749266, 0.32846585, 0.29998964, 0.41032055]], 'name': [0.981627, [0.32892853, 0.33053938, 0.37318957, 0.5004585]]})
+[2021-07-15 05:37:13,391][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:37:13,391][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:37:13,391][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.32504433, 0.33157256, 0.37182814, 0.49393567], 'mrz_region': [0.7942791, 0.043345243, 0.9256023, 0.9679909], 'surname': [0.24862736, 0.3320464, 0.29348835, 0.4080395]}
+[2021-07-15 05:37:13,391][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:37:13,395][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:37:13,606][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: ‘ALI Ab) HAMMER
+
+[2021-07-15 05:37:14,138][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: PRYEMNIZAR<<ALI<ALI<HAIDER<<<<<<<<<<<<<<<<<<
+60000000<2YEM6508209M1408061<<<<<<<<<<<<<<08
+
+[2021-07-15 05:37:14,139][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:37:14,320][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname:  
+
+[2021-07-15 05:37:14,320][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:37:14,320][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'name': '‘ALI Ab) HAMMER\n\x0c', 'mrz_surname': 'NIZAR', 'mrz_name': 'ALI ALI HAIDER', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '650820', 'mrz_expiry_date': '140806', 'mrz_document_number': '60000000', 'surname': ' \n\x0c'}
+[2021-07-15 05:37:14,321][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'name': '‘ALI Ab) HAMMER\n\x0c', 'mrz_surname': 'NIZAR', 'mrz_name': 'ALI ALI HAIDER', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '650820', 'mrz_expiry_date': '140806', 'mrz_document_number': '60000000', 'surname': ' \n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:37:14,321][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:39:16,238][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:39:16,238][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:39:16,238][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:39:16,238][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/Yemen_nat_org_data_templet8.jpg', 'reference_number': '1'}
+[2021-07-15 05:39:16,238][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:39:16,253][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:39:16,253][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:39:16,543][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:39:16,543][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:39:16,544][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:39:16,544][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.99988604, [0.8297376, 0.03819835, 0.96418065, 0.9984709]], 'surname': [0.99896586, [0.18950579, 0.3403812, 0.23732294, 0.4403078]], 'name': [0.98545897, [0.26611558, 0.34450084, 0.30756462, 0.55729413]]})
+[2021-07-15 05:39:16,544][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:39:16,560][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:39:16,560][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:39:16,613][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:39:16,613][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:39:16,614][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:39:16,614][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'surname': [0.99971426, [0.19437951, 0.34073868, 0.23954388, 0.43978885]], 'name': [0.9874164, [0.2678795, 0.34978873, 0.310036, 0.557788]], 'mrz_region': [0.9839041, [0.81923443, 0.04047081, 0.9485796, 0.9693142]]})
+[2021-07-15 05:39:16,614][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:39:16,614][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:39:16,614][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.8297376, 0.03819835, 0.96418065, 0.9984709], 'surname': [0.18950579, 0.3403812, 0.23732294, 0.4403078], 'name': [0.26611558, 0.34450084, 0.30756462, 0.55729413]}
+[2021-07-15 05:39:16,614][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:39:16,622][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:39:17,232][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<YEMMAHDI<<KHALED<GALAL<ALI<<<<<<<<<<<<<<<<
+00000000<0YEM9004148M2211167<<<<<<<<<<<<<<04
+
+[2021-07-15 05:39:17,232][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:39:17,429][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname:  
+
+[2021-07-15 05:39:17,652][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: ‘HALED GAC% ALI
+
+[2021-07-15 05:39:17,652][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:39:17,652][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'MAHDI', 'mrz_name': 'KHALED GALAL ALI', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '900414', 'mrz_expiry_date': '221116', 'mrz_document_number': '00000000', 'surname': ' \n\x0c', 'name': '‘HALED GAC% ALI\n\x0c'}
+[2021-07-15 05:39:17,652][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'MAHDI', 'mrz_name': 'KHALED GALAL ALI', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '900414', 'mrz_expiry_date': '221116', 'mrz_document_number': '00000000', 'surname': ' \n\x0c', 'name': '‘HALED GAC% ALI\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:39:17,652][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:39:51,527][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:39:51,527][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:39:51,527][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:39:51,527][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/Yemen_nat_org_data_templet7.jpg', 'reference_number': '1'}
+[2021-07-15 05:39:51,527][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:39:51,541][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:39:51,541][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:39:51,815][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:39:51,815][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:39:51,815][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:39:51,815][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.9997692, [0.24493718, 0.36509365, 0.3026538, 0.65541154]], 'mrz_region': [0.99953103, [0.8149562, 0.030086637, 0.97493416, 0.95381725]], 'surname': [0.9984479, [0.1742198, 0.33798388, 0.21781252, 0.45659873]]})
+[2021-07-15 05:39:51,815][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:39:51,829][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:39:51,829][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:39:51,895][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:39:51,895][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:39:51,895][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:39:51,895][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'surname': [0.9944016, [0.17511728, 0.33444494, 0.21861905, 0.453925]], 'mrz_region': [0.9910406, [0.79050153, 0.026024401, 0.9599778, 0.9664099]], 'name': [0.9653326, [0.24291886, 0.33810878, 0.2964928, 0.6623621]]})
+[2021-07-15 05:39:51,895][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:39:51,895][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:39:51,895][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.24493718, 0.36509365, 0.3026538, 0.65541154], 'mrz_region': [0.8149562, 0.030086637, 0.97493416, 0.95381725], 'surname': [0.1742198, 0.33798388, 0.21781252, 0.45659873]}
+[2021-07-15 05:39:51,896][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:39:51,902][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:39:52,110][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: JNEER MOHAMMED AHMED.
+
+[2021-07-15 05:39:52,944][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: PRYEMALKEBSI<<MUNEER<MOHAMMED<AHMED<<<<<<<<<
+00000000<0YEM8707291M1904035<<<<<<<<<<<<<<02
+
+[2021-07-15 05:39:52,945][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:39:53,154][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: AL-KEBSI
+
+[2021-07-15 05:39:53,154][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:39:53,154][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'name': 'JNEER MOHAMMED AHMED.\n\x0c', 'mrz_surname': 'ALKEBSI', 'mrz_name': 'MUNEER MOHAMMED AHMED', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '870729', 'mrz_expiry_date': '190403', 'mrz_document_number': '00000000', 'surname': 'AL-KEBSI\n\x0c'}
+[2021-07-15 05:39:53,154][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'name': 'JNEER MOHAMMED AHMED.\n\x0c', 'mrz_surname': 'ALKEBSI', 'mrz_name': 'MUNEER MOHAMMED AHMED', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '870729', 'mrz_expiry_date': '190403', 'mrz_document_number': '00000000', 'surname': 'AL-KEBSI\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:39:53,154][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:40:17,800][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:40:17,800][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:40:17,800][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:40:17,800][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/Yemen_nat_org_data_templet6.jpg', 'reference_number': '1'}
+[2021-07-15 05:40:17,800][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:40:17,814][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:40:17,814][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:40:18,147][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:40:18,147][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:40:18,147][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:40:18,147][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.9997096, [0.18536392, 0.33516696, 0.22935693, 0.44630006]], 'mrz_region': [0.9995507, [0.81204486, 0.03483504, 0.95201224, 0.95445263]], 'name': [0.9886699, [0.2581603, 0.34085253, 0.30395454, 0.50464374]]})
+[2021-07-15 05:40:18,148][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:40:18,164][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:40:18,164][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:40:18,213][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:40:18,213][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:40:18,214][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:40:18,214][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'name': [0.99295235, [0.2567547, 0.3429109, 0.30170715, 0.5058841]], 'mrz_region': [0.98807853, [0.80824304, 0.03362024, 0.9444343, 0.96894777]], 'surname': [0.9876722, [0.18486692, 0.33848846, 0.2275929, 0.44841206]]})
+[2021-07-15 05:40:18,214][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:40:18,214][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:40:18,214][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.18536392, 0.33516696, 0.22935693, 0.44630006], 'mrz_region': [0.81204486, 0.03483504, 0.95201224, 0.95445263], 'name': [0.2581603, 0.34085253, 0.30395454, 0.50464374]}
+[2021-07-15 05:40:18,214][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:40:18,220][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:40:18,412][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: 
+[2021-07-15 05:40:18,992][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: PRYEMHUNAISH<<ALI<ALI<AHMED<<<<<<<<<<<<<<<<<
+04078026<7YEM6210102M1701049<<<<<<<<<<<<<<02
+
+[2021-07-15 05:40:18,993][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:40:19,197][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: ALi ALI AHMED
+
+[2021-07-15 05:40:19,197][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:40:19,198][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'surname': '\x0c', 'mrz_surname': 'HUNAISH', 'mrz_name': 'ALI ALI AHMED', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '621010', 'mrz_expiry_date': '170104', 'mrz_document_number': '04078026', 'name': 'ALi ALI AHMED\n\x0c'}
+[2021-07-15 05:40:19,198][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'surname': '\x0c', 'mrz_surname': 'HUNAISH', 'mrz_name': 'ALI ALI AHMED', 'mrz_country': 'YEM', 'mrz_sex': 'M', 'mrz_birth_date': '621010', 'mrz_expiry_date': '170104', 'mrz_document_number': '04078026', 'name': 'ALi ALI AHMED\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:40:19,198][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:40:48,907][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:40:48,908][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:40:48,908][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:40:48,908][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/Yemen_nat_org_data_templet4.jpg', 'reference_number': '1'}
+[2021-07-15 05:40:48,908][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:40:48,929][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:40:48,929][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:40:49,208][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:40:49,208][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:40:49,209][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:40:49,209][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9991834, [0.796096, 0.03891155, 0.9265771, 0.94810534]], 'name': [0.99787074, [0.3074673, 0.3262985, 0.3471175, 0.6469166]]})
+[2021-07-15 05:40:49,209][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:40:49,225][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:40:49,226][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:40:49,280][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:40:49,280][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:40:49,281][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:40:49,281][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'name': [0.98358095, [0.3127866, 0.30122486, 0.349072, 0.6707672]], 'mrz_region': [0.9835352, [0.8184128, 0.058643818, 0.9477687, 0.9622563]]})
+[2021-07-15 05:40:49,281][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:40:49,281][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:40:49,282][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.796096, 0.03891155, 0.9265771, 0.94810534], 'name': [0.3074673, 0.3262985, 0.3471175, 0.6469166]}
+[2021-07-15 05:40:49,282][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:40:49,294][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:40:50,510][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: 4 8
+REEBTH<022HAAVRBAEES<1
+MM0AN022D0MN0<XR MA0MN50REMM<1N019020<0<0<0<<0<<0<0<<<<<<<0156
+
+[2021-07-15 05:40:50,510][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check unsuccessful
+[2021-07-15 05:40:50,511][TID-140616923301632][ERROR][logger.exception_handler:55]-MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 174, in recognize_character
+    td3 = TD3CodeChecker(tesseract_output[0:89])
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/checker/td3.py", line 85, in __init__
+    check.precheck("TD3", mrz_code, 89)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/base/string_checkers.py", line 103, in precheck
+    raise FieldError("%s contains invalid characters" % document_description, s)
+mrz.base.errors.FieldError: ('TD3 contains invalid characters', '4 8REEBTH<022HAAVRBAEES<1MM0AN022D0MN0<XR MA0MN50REMM<1N019020<0<0<0<<0<<0<0<<<<<<<0156')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 188, in recognize_character
+    raise MRZNotValid("MRZ detected is not valid. Check image in the MRZ region")
+logger.custom_exceptions.MRZNotValid: MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+
+[2021-07-15 05:40:50,511][TID-140616923301632][DEBUG][logger.exception_handler:44]-final output: {'error_no': '103', 'error_description': 'MRZ not valid'}
+[2021-07-15 05:41:16,544][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:41:16,545][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:41:16,545][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:41:16,545][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/Qatar_nat_specimen_data_templet4.jpg', 'reference_number': '1'}
+[2021-07-15 05:41:16,545][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:41:16,559][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:41:16,560][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:41:16,831][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:41:16,831][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:41:16,831][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:41:16,831][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.997831, [0.7753531, 0.030720413, 0.91225344, 0.955664]], 'name': [0.9672121, [0.32281187, 0.32527813, 0.3578882, 0.8422421]]})
+[2021-07-15 05:41:16,831][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:41:16,846][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:41:16,846][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:41:16,904][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:41:16,904][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:41:16,905][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:41:16,905][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9960877, [0.78974795, 0.037949413, 0.91577065, 0.93269193]], 'name': [0.97407955, [0.32347107, 0.33176333, 0.36264628, 0.8643958]]})
+[2021-07-15 05:41:16,905][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:41:16,905][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:41:16,906][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.7753531, 0.030720413, 0.91225344, 0.955664], 'name': [0.32281187, 0.32527813, 0.3578882, 0.8422421]}
+[2021-07-15 05:41:16,906][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:41:16,914][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:41:17,755][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<QATYOUSEF<<FAHAD<ABDURAHMAN<AHMAD<<<<<<<<<
+00126499<7QAT6801014M130924926863400752<<<36
+
+[2021-07-15 05:41:17,756][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:41:17,985][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: FAHAD ABDURAHMA|
+
+N AHMAD YOUSE
+
+[2021-07-15 05:41:17,985][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:41:17,985][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'YOUSEF', 'mrz_name': 'FAHAD ABDURAHMAN AHMAD', 'mrz_country': 'QAT', 'mrz_sex': 'M', 'mrz_birth_date': '680101', 'mrz_expiry_date': '130924', 'mrz_document_number': '00126499', 'name': 'FAHAD ABDURAHMA|\n\nN AHMAD YOUSE\n\x0c'}
+[2021-07-15 05:41:17,985][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'YOUSEF', 'mrz_name': 'FAHAD ABDURAHMAN AHMAD', 'mrz_country': 'QAT', 'mrz_sex': 'M', 'mrz_birth_date': '680101', 'mrz_expiry_date': '130924', 'mrz_document_number': '00126499', 'name': 'FAHAD ABDURAHMA|\n\nN AHMAD YOUSE\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:41:17,985][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:41:43,044][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:41:43,044][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:41:43,044][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:41:43,044][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/Qatar_nat_specimen_data_templet3.jpg', 'reference_number': '1'}
+[2021-07-15 05:41:43,045][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:41:43,060][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:41:43,060][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:41:43,338][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:41:43,338][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:41:43,338][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:41:43,338][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.94920117, [0.8116135, 0.03190559, 0.92927873, 0.9691362]], 'name': [0.9390384, [0.3700106, 0.270809, 0.40671757, 0.75543433]]})
+[2021-07-15 05:41:43,338][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:41:43,356][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:41:43,356][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:41:43,408][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:41:43,409][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:41:43,409][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:41:43,409][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.98975646, [0.7994688, 0.04452461, 0.9205715, 0.9487976]], 'name': [0.9486294, [0.3621621, 0.30019164, 0.40235394, 0.7489356]]})
+[2021-07-15 05:41:43,409][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:41:43,409][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:41:43,409][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.8116135, 0.03190559, 0.92927873, 0.9691362], 'name': [0.3700106, 0.270809, 0.40671757, 0.75543433]}
+[2021-07-15 05:41:43,410][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:41:43,418][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:41:44,043][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<QATAL<AQEEDI<<ABDULLA<ESSA<S<A<<<<<<<<<<<<
+00000217<0QAT6704252M040531726763400238<<<16
+
+[2021-07-15 05:41:44,044][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:41:44,280][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: m ABDULLA ESSA S A AL-AQEEDI
+
+[2021-07-15 05:41:44,280][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:41:44,280][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'AL AQEEDI', 'mrz_name': 'ABDULLA ESSA S A', 'mrz_country': 'QAT', 'mrz_sex': 'M', 'mrz_birth_date': '670425', 'mrz_expiry_date': '040531', 'mrz_document_number': '00000217', 'name': 'm ABDULLA ESSA S A AL-AQEEDI\n\x0c'}
+[2021-07-15 05:41:44,280][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'AL AQEEDI', 'mrz_name': 'ABDULLA ESSA S A', 'mrz_country': 'QAT', 'mrz_sex': 'M', 'mrz_birth_date': '670425', 'mrz_expiry_date': '040531', 'mrz_document_number': '00000217', 'name': 'm ABDULLA ESSA S A AL-AQEEDI\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:41:44,280][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:42:13,154][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:42:13,154][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:42:13,154][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:42:13,154][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/china_nat_temp2_specimen_data.jpg', 'reference_number': '1'}
+[2021-07-15 05:42:13,154][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:42:13,176][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:42:13,176][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:42:13,499][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:42:13,499][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:42:13,499][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:42:13,499][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9998994, [0.79253787, 0.034985572, 0.9348352, 0.95408916]], 'name': [0.99971175, [0.25355053, 0.28999555, 0.29852393, 0.57350576]]})
+[2021-07-15 05:42:13,500][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:42:13,518][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:42:13,519][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:42:13,585][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:42:13,585][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:42:13,585][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:42:13,586][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'name': [0.9921874, [0.25426736, 0.32037616, 0.29447785, 0.5973474]], 'mrz_region': [0.99172777, [0.78885937, 0.034121186, 0.91816306, 0.94465566]]})
+[2021-07-15 05:42:13,586][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:42:13,586][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:42:13,586][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.79253787, 0.034985572, 0.9348352, 0.95408916], 'name': [0.25355053, 0.28999555, 0.29852393, 0.57350576]}
+[2021-07-15 05:42:13,586][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:42:13,595][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:42:14,832][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: POCHNZHENGJIAN<<YANGBEN<<<<<<<<<<<<<<<<<<<<<
+E000000008CHN8310291F2202059NGKELMPONBPJB972
+
+[2021-07-15 05:42:14,832][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:42:15,044][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: ZHENGJIAN, YANGBE
+
+[2021-07-15 05:42:15,044][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:42:15,044][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'ZHENGJIAN', 'mrz_name': 'YANGBEN', 'mrz_country': 'CHN', 'mrz_sex': 'F', 'mrz_birth_date': '831029', 'mrz_expiry_date': '220205', 'mrz_document_number': 'E00000000', 'name': 'ZHENGJIAN, YANGBE\n\x0c'}
+[2021-07-15 05:42:15,045][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'ZHENGJIAN', 'mrz_name': 'YANGBEN', 'mrz_country': 'CHN', 'mrz_sex': 'F', 'mrz_birth_date': '831029', 'mrz_expiry_date': '220205', 'mrz_document_number': 'E00000000', 'name': 'ZHENGJIAN, YANGBE\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:42:15,045][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:42:38,026][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:42:38,026][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:42:38,026][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:42:38,026][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/china_nat_org_data_template2.jpg', 'reference_number': '1'}
+[2021-07-15 05:42:38,026][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:42:38,042][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:42:38,043][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:42:38,318][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:42:38,318][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:42:38,318][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:42:38,319][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.99952745, [0.284092, 0.3071706, 0.33066466, 0.4574494]], 'mrz_region': [0.9994834, [0.8088348, 0.043614715, 0.94063765, 0.9597981]]})
+[2021-07-15 05:42:38,319][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:42:38,336][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:42:38,336][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:42:38,401][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:42:38,402][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:42:38,402][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:42:38,402][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'name': [0.9948915, [0.28435326, 0.30859163, 0.32954854, 0.4668539]], 'mrz_region': [0.988199, [0.81251836, 0.040216863, 0.9428102, 0.9587641]]})
+[2021-07-15 05:42:38,402][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:42:38,402][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:42:38,402][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.284092, 0.3071706, 0.33066466, 0.4574494], 'mrz_region': [0.8088348, 0.043614715, 0.94063765, 0.9597981]}
+[2021-07-15 05:42:38,402][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:42:38,410][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:42:38,611][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: YANG, ZHAC
+
+[2021-07-15 05:42:39,597][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: PPCHNYANG<<ZHAO<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+PE00000007CHN8509037F150501819200001<<<<<<94
+
+[2021-07-15 05:42:39,598][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:42:39,600][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:42:39,600][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'name': 'YANG, ZHAC\n\x0c', 'mrz_surname': 'YANG', 'mrz_name': 'ZHAO', 'mrz_country': 'CHN', 'mrz_sex': 'F', 'mrz_birth_date': '850903', 'mrz_expiry_date': '150501', 'mrz_document_number': 'PE0000000'}
+[2021-07-15 05:42:39,600][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'name': 'YANG, ZHAC\n\x0c', 'mrz_surname': 'YANG', 'mrz_name': 'ZHAO', 'mrz_country': 'CHN', 'mrz_sex': 'F', 'mrz_birth_date': '850903', 'mrz_expiry_date': '150501', 'mrz_document_number': 'PE0000000', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:42:39,600][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:42:58,292][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:42:58,292][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:42:58,292][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:42:58,292][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/brunei_nat_temp2_specimen_data.jpg', 'reference_number': '1'}
+[2021-07-15 05:42:58,292][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:42:58,307][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:42:58,307][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:42:58,587][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:42:58,587][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:42:58,587][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:42:58,587][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.97710764, [0.77429366, 0.037638634, 0.92597014, 0.9685521]], 'name': [0.96882796, [0.18197222, 0.34477478, 0.24332002, 0.93139]]})
+[2021-07-15 05:42:58,587][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:42:58,602][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:42:58,603][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:42:58,651][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:42:58,651][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:42:58,651][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:42:58,651][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9974028, [0.77817816, 0.039436996, 0.929184, 0.9531571]], 'name': [0.9669862, [0.1784492, 0.36195502, 0.23629268, 0.9001763]]})
+[2021-07-15 05:42:58,651][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:42:58,651][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:42:58,651][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'mrz_region': [0.77429366, 0.037638634, 0.92597014, 0.9685521], 'name': [0.18197222, 0.34477478, 0.24332002, 0.93139]}
+[2021-07-15 05:42:58,651][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:42:58,658][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:42:59,535][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<BRNPG<HJ<ABD<AZIZ<BIN<PG<HJ<MD<ALI<<<<<<<<
+110930<<<2BRN6704034M0306300<<<<<<<<<<<<<<<4
+
+[2021-07-15 05:42:59,535][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:42:59,780][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: eG HJ ABD AZIZ BIN PG HJ MB ALT
+
+[2021-07-15 05:42:59,780][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:42:59,780][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'mrz_surname': 'PG HJ ABD AZIZ BIN PG HJ MD ALI', 'mrz_name': '', 'mrz_country': 'BRN', 'mrz_sex': 'M', 'mrz_birth_date': '670403', 'mrz_expiry_date': '030630', 'mrz_document_number': '110930', 'name': 'eG HJ ABD AZIZ BIN PG HJ MB ALT\n\x0c'}
+[2021-07-15 05:42:59,780][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'mrz_surname': 'PG HJ ABD AZIZ BIN PG HJ MD ALI', 'mrz_name': '', 'mrz_country': 'BRN', 'mrz_sex': 'M', 'mrz_birth_date': '670403', 'mrz_expiry_date': '030630', 'mrz_document_number': '110930', 'name': 'eG HJ ABD AZIZ BIN PG HJ MB ALT\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:42:59,780][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:43:25,735][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:43:25,735][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:43:25,735][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:43:25,735][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/bosnia_nat_temp7_specimen_data_ne.jpg', 'reference_number': '1'}
+[2021-07-15 05:43:25,735][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:43:25,748][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:43:25,748][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:43:26,026][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:43:26,026][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:43:26,026][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:43:26,026][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.99984825, [0.25674278, 0.2817636, 0.29940164, 0.38021904]], 'mrz_region': [0.9982026, [0.7643741, 0.040086806, 0.9242828, 0.9545594]], 'surname': [0.9951054, [0.1914457, 0.28296608, 0.22766192, 0.40471655]]})
+[2021-07-15 05:43:26,026][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:43:26,041][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:43:26,041][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:43:26,093][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:43:26,093][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:43:26,093][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:43:26,094][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9944327, [0.76433164, 0.04352191, 0.9328217, 0.95549726]], 'surname': [0.99293727, [0.18660685, 0.28426492, 0.22357735, 0.3930685]], 'name': [0.9925971, [0.25438568, 0.27889255, 0.2954187, 0.37483653]]})
+[2021-07-15 05:43:26,094][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:43:26,094][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:43:26,094][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.25674278, 0.2817636, 0.29940164, 0.38021904], 'mrz_region': [0.7643741, 0.040086806, 0.9242828, 0.9545594], 'surname': [0.1914457, 0.28296608, 0.22766192, 0.40471655]}
+[2021-07-15 05:43:26,094][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:43:26,100][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:43:26,292][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: KOVACEVIC
+
+[2021-07-15 05:43:26,905][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<BIHKOVACEVIC<<AZRA<MARINA<<<<<<<<<<<<<<<<<
+W0010025<0BIH8502119F2410018010025<<<<<<<<42
+
+[2021-07-15 05:43:26,906][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:43:27,106][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: AZRA-MARINA
+
+[2021-07-15 05:43:27,106][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:43:27,106][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'name': 'KOVACEVIC\n\x0c', 'mrz_surname': 'KOVACEVIC', 'mrz_name': 'AZRA MARINA', 'mrz_country': 'BIH', 'mrz_sex': 'F', 'mrz_birth_date': '850211', 'mrz_expiry_date': '241001', 'mrz_document_number': 'W0010025', 'surname': 'AZRA-MARINA\n\x0c'}
+[2021-07-15 05:43:27,106][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'name': 'KOVACEVIC\n\x0c', 'mrz_surname': 'KOVACEVIC', 'mrz_name': 'AZRA MARINA', 'mrz_country': 'BIH', 'mrz_sex': 'F', 'mrz_birth_date': '850211', 'mrz_expiry_date': '241001', 'mrz_document_number': 'W0010025', 'surname': 'AZRA-MARINA\n\x0c', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:43:27,106][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:43:51,914][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:43:51,915][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:43:51,915][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:43:51,915][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/1.jpg', 'reference_number': '1'}
+[2021-07-15 05:43:51,915][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:43:51,916][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:43:51,916][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Software (305) - type: string (2) Tag Location: 34 - Data Location: 50 - value: b'Shotwell 0.28.4\x00'
+[2021-07-15 05:43:51,916][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ExifIFD (34665) - type: long (4) - value: b'B\x00\x00\x00'
+[2021-07-15 05:43:51,922][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:43:51,922][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:43:52,190][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:43:52,190][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:43:52,191][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:43:52,191][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.9999618, [0.28885475, 0.3480096, 0.34920675, 0.43958682]], 'surname': [0.9989611, [0.20582847, 0.33739597, 0.24861784, 0.6448184]], 'mrz_region': [0.99863815, [0.80206275, 0.03459537, 0.9512816, 0.9475814]]})
+[2021-07-15 05:43:52,191][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:43:52,192][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:43:52,192][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Software (305) - type: string (2) Tag Location: 34 - Data Location: 50 - value: b'Shotwell 0.28.4\x00'
+[2021-07-15 05:43:52,192][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ExifIFD (34665) - type: long (4) - value: b'B\x00\x00\x00'
+[2021-07-15 05:43:52,199][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:43:52,199][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:43:52,256][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:43:52,256][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:43:52,256][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:43:52,256][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9916564, [0.7861233, 0.03909391, 0.9470016, 0.949109]], 'name': [0.97525346, [0.29008344, 0.34772706, 0.3478633, 0.44194496]], 'surname': [0.96615565, [0.2040708, 0.34869722, 0.24945623, 0.61758804]]})
+[2021-07-15 05:43:52,256][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:43:52,257][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:43:52,257][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.28885475, 0.3480096, 0.34920675, 0.43958682], 'surname': [0.20582847, 0.33739597, 0.24861784, 0.6448184], 'mrz_region': [0.80206275, 0.03459537, 0.9512816, 0.9475814]}
+[2021-07-15 05:43:52,257][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:43:52,260][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:43:52,462][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: JAMES
+
+[2021-07-15 05:43:52,664][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: PERCIVAL AMBROSE
+
+[2021-07-15 05:43:53,462][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<INDPERCIVAL<AMBROSE<<JAMES<<<<<<<<<<<<<<<<
+H5770929<0IND5705252M1911057<<<<<<<<<<<<<<<0
+
+[2021-07-15 05:43:53,462][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 05:43:53,465][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 05:43:53,465][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'name': 'JAMES\n\x0c', 'surname': 'PERCIVAL AMBROSE\n\x0c', 'mrz_surname': 'PERCIVAL AMBROSE', 'mrz_name': 'JAMES', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '570525', 'mrz_expiry_date': '191105', 'mrz_document_number': 'H5770929'}
+[2021-07-15 05:43:53,465][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'name': 'JAMES\n\x0c', 'surname': 'PERCIVAL AMBROSE\n\x0c', 'mrz_surname': 'PERCIVAL AMBROSE', 'mrz_name': 'JAMES', 'mrz_country': 'IND', 'mrz_sex': 'M', 'mrz_birth_date': '570525', 'mrz_expiry_date': '191105', 'mrz_document_number': 'H5770929', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 05:43:53,465][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 05:44:30,546][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 05:44:30,546][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 05:44:30,546][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 05:44:30,546][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/4.jpg', 'reference_number': '1'}
+[2021-07-15 05:44:30,546][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:44:30,547][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:44:30,547][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Software (305) - type: string (2) Tag Location: 34 - Data Location: 50 - value: b'Shotwell 0.28.4\x00'
+[2021-07-15 05:44:30,547][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ExifIFD (34665) - type: long (4) - value: b'B\x00\x00\x00'
+[2021-07-15 05:44:30,553][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:44:30,553][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:44:30,811][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:44:30,811][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:44:30,811][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:44:30,812][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.99983287, [0.319002, 0.31253007, 0.37056985, 0.44484118]], 'mrz_region': [0.99866, [0.8092153, 0.026905388, 0.973644, 0.96055484]], 'surname': [0.9955825, [0.23756357, 0.31485528, 0.27725208, 0.4697016]]})
+[2021-07-15 05:44:30,812][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 05:44:30,812][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2021-07-15 05:44:30,813][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: Software (305) - type: string (2) Tag Location: 34 - Data Location: 50 - value: b'Shotwell 0.28.4\x00'
+[2021-07-15 05:44:30,813][TID-140616923301632][DEBUG][PIL.TiffImagePlugin:789]-tag: ExifIFD (34665) - type: long (4) - value: b'B\x00\x00\x00'
+[2021-07-15 05:44:30,818][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 05:44:30,818][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 05:44:30,879][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 05:44:30,879][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 05:44:30,880][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 05:44:30,880][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'surname': [0.98758185, [0.23434088, 0.3128475, 0.27564183, 0.47591966]], 'mrz_region': [0.98392844, [0.79667836, 0.030409366, 0.97136647, 0.97380686]], 'name': [0.9784874, [0.3204741, 0.3160953, 0.37148684, 0.44473702]]})
+[2021-07-15 05:44:30,880][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 05:44:30,880][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 05:44:30,880][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.319002, 0.31253007, 0.37056985, 0.44484118], 'mrz_region': [0.8092153, 0.026905388, 0.973644, 0.96055484], 'surname': [0.23756357, 0.31485528, 0.27725208, 0.4697016]}
+[2021-07-15 05:44:30,880][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 05:44:30,883][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 05:44:31,083][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: PUNTTHA
+
+[2021-07-15 05:44:31,879][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: TRINDSWEETLINE<<PUNITHA<<<<<<<<<<<<<<<<<<<<<
+H5770657<2IND6204132F191 S 046<<<<<<<<<<<<<<<2
+
+[2021-07-15 05:44:31,879][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check unsuccessful
+[2021-07-15 05:44:31,880][TID-140616923301632][ERROR][logger.exception_handler:55]-MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 174, in recognize_character
+    td3 = TD3CodeChecker(tesseract_output[0:89])
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/checker/td3.py", line 85, in __init__
+    check.precheck("TD3", mrz_code, 89)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/mrz/base/string_checkers.py", line 103, in precheck
+    raise FieldError("%s contains invalid characters" % document_description, s)
+mrz.base.errors.FieldError: ('TD3 contains invalid characters', 'TRINDSWEETLINE<<PUNITHA<<<<<<<<<<<<<<<<<<<<<H5770657<2IND6204132F191 S 046<<<<<<<<<<<<<<')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 188, in recognize_character
+    raise MRZNotValid("MRZ detected is not valid. Check image in the MRZ region")
+logger.custom_exceptions.MRZNotValid: MRZ is Not valid: MRZ detected is not valid. Check image in the MRZ region
+
+[2021-07-15 05:44:31,880][TID-140616923301632][DEBUG][logger.exception_handler:44]-final output: {'error_no': '103', 'error_description': 'MRZ not valid'}
+[2021-07-15 06:02:37,389][TID-140616923301632][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 06:02:37,389][TID-140616923301632][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 06:02:37,390][TID-140616923301632][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 06:02:37,390][TID-140616923301632][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/unique_no_aug/images/albania_nat_org_data_template4.jpg', 'reference_number': '1'}
+[2021-07-15 06:02:37,390][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 06:02:37,405][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 06:02:37,405][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 06:02:37,767][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 06:02:37,768][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 06:02:37,770][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 06:02:37,771][TID-140616923301632][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'name': [0.99987704, [0.28729516, 0.30895135, 0.3312455, 0.413121]], 'surname': [0.99853873, [0.21350238, 0.30253458, 0.25804877, 0.38987577]], 'mrz_region': [0.9966809, [0.7864158, 0.03991449, 0.90997297, 0.964828]]})
+[2021-07-15 06:02:37,772][TID-140616923301632][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 06:02:37,852][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 06:02:37,852][TID-140616923301632][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 06:02:37,901][TID-140616923301632][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 06:02:37,901][TID-140616923301632][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 06:02:37,902][TID-140616923301632][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 06:02:37,902][TID-140616923301632][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9861363, [0.79371464, 0.037487, 0.9108255, 0.95407236]], 'surname': [0.97762084, [0.21427049, 0.30529207, 0.25680697, 0.39208847]], 'name': [0.96112025, [0.28425378, 0.3117981, 0.32804018, 0.40829915]]})
+[2021-07-15 06:02:37,902][TID-140616923301632][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 06:02:37,902][TID-140616923301632][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 06:02:37,902][TID-140616923301632][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'name': [0.28729516, 0.30895135, 0.3312455, 0.413121], 'surname': [0.21350238, 0.30253458, 0.25804877, 0.38987577], 'mrz_region': [0.7864158, 0.03991449, 0.90997297, 0.964828]}
+[2021-07-15 06:02:37,902][TID-140616923301632][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 06:02:37,909][TID-140616923301632][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 06:02:38,326][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for name: Monik&
+
+[2021-07-15 06:02:38,638][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for surname: 
+[2021-07-15 06:02:39,235][TID-140616923301632][DEBUG][pid.od_predict:44]-Tesseract_output for MRZ region: P<ALBSOJLI<<MONIKA<<<<<<<<<<<<<<<<<<<<<<<<<<
+XB00032562ALB8102210F1902086J12345618K<<<<90
+
+[2021-07-15 06:02:39,235][TID-140616923301632][INFO][pid.od_predict:33]-MRZ check done successfully
+[2021-07-15 06:02:39,237][TID-140616923301632][INFO][pid.od_predict:33]-Exited recognize_character
+[2021-07-15 06:02:39,237][TID-140616923301632][DEBUG][pid.main:44]-OCR done: {'name': 'Monik&\n\x0c', 'surname': '\x0c', 'mrz_surname': 'SOJLI', 'mrz_name': 'MONIKA', 'mrz_country': 'ALB', 'mrz_sex': 'F', 'mrz_birth_date': '810221', 'mrz_expiry_date': '190208', 'mrz_document_number': 'XB0003256'}
+[2021-07-15 06:02:39,237][TID-140616923301632][DEBUG][pid.main:44]-Final output: {'name': 'Monik&\n\x0c', 'surname': '\x0c', 'mrz_surname': 'SOJLI', 'mrz_name': 'MONIKA', 'mrz_country': 'ALB', 'mrz_sex': 'F', 'mrz_birth_date': '810221', 'mrz_expiry_date': '190208', 'mrz_document_number': 'XB0003256', 'ref_number': '1', 'error_no': '000', 'error_description': 'Successfully completed all the data extraction'}
+[2021-07-15 06:02:39,237][TID-140616923301632][INFO][pid.main:33]-Exited request_handler
+[2021-07-15 12:49:03,285][TID-140542364948224][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 12:49:04,888][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_95748) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:05,788][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_84654) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:06,694][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_55636) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:09,726][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_88397) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:10,646][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_120956) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:12,381][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_60201) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:13,541][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_call_func_79138) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:15,311][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_119336) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:17,124][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_call_func_18466) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:18,379][TID-140542364948224][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_92005) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:49:37,176][TID-140542364948224][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 12:49:37,176][TID-140542364948224][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 12:49:37,176][TID-140542364948224][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/Anand_Agrawal _front.jpg', 'reference_number': '1'}
+[2021-07-15 12:49:37,176][TID-140542364948224][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 12:49:37,238][TID-140542364948224][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 12:49:37,238][TID-140542364948224][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 12:49:39,564][TID-140542364948224][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 12:49:39,565][TID-140542364948224][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 12:49:39,566][TID-140542364948224][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 12:49:39,566][TID-140542364948224][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.9986779, [0.18888342, 0.36142448, 0.240104, 0.48475507]], 'mrz_region': [0.9955708, [0.7527873, 0.034012705, 0.8962717, 0.96754146]], 'name': [0.7182891, [0.2732732, 0.36093956, 0.3229973, 0.5899349]]})
+[2021-07-15 12:49:39,566][TID-140542364948224][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 12:49:39,588][TID-140542364948224][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 12:49:39,588][TID-140542364948224][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 12:49:40,482][TID-140542364948224][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 12:49:40,482][TID-140542364948224][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 12:49:40,483][TID-140542364948224][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 12:49:40,483][TID-140542364948224][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9817201, [0.75189924, 0.04905823, 0.8993137, 0.9516034]], 'surname': [0.964985, [0.19364825, 0.35502112, 0.24012238, 0.4825772]], 'name': [0.95500076, [0.27203548, 0.3566473, 0.32471448, 0.5890242]]})
+[2021-07-15 12:49:40,483][TID-140542364948224][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 12:49:40,483][TID-140542364948224][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 12:49:40,483][TID-140542364948224][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.18888342, 0.36142448, 0.240104, 0.48475507], 'mrz_region': [0.7527873, 0.034012705, 0.8962717, 0.96754146], 'name': [0.27203548, 0.3566473, 0.32471448, 0.5890242]}
+[2021-07-15 12:49:40,483][TID-140542364948224][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 12:49:40,487][TID-140542364948224][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 12:49:41,260][TID-140542364948224][ERROR][logger.exception_handler:55]-name 'TesseractLanguageException' is not defined
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 211, in recognize_character
+    ocr[labels] = pytesseract.image_to_string(cropped_surname,lang='name_adcbp')
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 413, in image_to_string
+    }[output_type]()
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 412, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 287, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 263, in run_tesseract
+    raise TesseractError(proc.returncode, get_errors(error_string))
+pytesseract.pytesseract.TesseractError: (1, "Error: Tesseract (legacy) engine requested, but components are not present in /usr/share/tesseract-ocr/4.00/tessdata/name_adcbp.traineddata!! Failed loading language 'name_adcbp' Tesseract couldn't load any languages! Could not initialize tesseract.")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 213, in recognize_character
+    raise TesseractLanguageException("Verify Name/surname model language is available in the right path")
+NameError: name 'TesseractLanguageException' is not defined
+
+[2021-07-15 12:49:41,261][TID-140542364948224][DEBUG][logger.exception_handler:44]-final output: {'error_no': 999, 'error_description': 'Some unknown error occurred. Please contact the administrator'}
+[2021-07-15 12:50:26,999][TID-139681482131200][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 12:50:28,434][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_95748) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:29,330][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_84654) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:30,247][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_55636) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:33,517][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_88397) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:34,463][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_120956) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:36,237][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_60201) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:37,434][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_call_func_79138) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:39,248][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_bifpn_layer_call_and_return_conditional_losses_119336) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:41,159][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_call_func_18466) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:42,387][TID-139681482131200][WARNING][absl:502]-Importing a function (__inference_EfficientDet-D0_layer_call_and_return_conditional_losses_92005) with ops with custom gradients. Will likely fail if a gradient is requested.
+[2021-07-15 12:50:59,420][TID-139681482131200][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 12:50:59,421][TID-139681482131200][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 12:50:59,421][TID-139681482131200][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/Anand_Agrawal _front.jpg', 'reference_number': '1'}
+[2021-07-15 12:50:59,421][TID-139681482131200][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 12:50:59,432][TID-139681482131200][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 12:50:59,432][TID-139681482131200][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 12:51:01,733][TID-139681482131200][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 12:51:01,733][TID-139681482131200][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 12:51:01,733][TID-139681482131200][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 12:51:01,733][TID-139681482131200][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.9986779, [0.18888342, 0.36142448, 0.240104, 0.48475507]], 'mrz_region': [0.9955708, [0.7527873, 0.034012705, 0.8962717, 0.96754146]], 'name': [0.7182891, [0.2732732, 0.36093956, 0.3229973, 0.5899349]]})
+[2021-07-15 12:51:01,733][TID-139681482131200][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 12:51:01,740][TID-139681482131200][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 12:51:01,740][TID-139681482131200][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 12:51:02,758][TID-139681482131200][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 12:51:02,758][TID-139681482131200][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 12:51:02,758][TID-139681482131200][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 12:51:02,758][TID-139681482131200][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9817201, [0.75189924, 0.04905823, 0.8993137, 0.9516034]], 'surname': [0.964985, [0.19364825, 0.35502112, 0.24012238, 0.4825772]], 'name': [0.95500076, [0.27203548, 0.3566473, 0.32471448, 0.5890242]]})
+[2021-07-15 12:51:02,758][TID-139681482131200][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 12:51:02,759][TID-139681482131200][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 12:51:02,759][TID-139681482131200][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.18888342, 0.36142448, 0.240104, 0.48475507], 'mrz_region': [0.7527873, 0.034012705, 0.8962717, 0.96754146], 'name': [0.27203548, 0.3566473, 0.32471448, 0.5890242]}
+[2021-07-15 12:51:02,759][TID-139681482131200][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 12:51:02,762][TID-139681482131200][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 12:51:02,966][TID-139681482131200][ERROR][logger.exception_handler:55]-Tesseract Language Exception: Verify Name/surname model language is available in the right path
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 211, in recognize_character
+    ocr[labels] = pytesseract.image_to_string(cropped_surname,lang='name_adcbp')
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 413, in image_to_string
+    }[output_type]()
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 412, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 287, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 263, in run_tesseract
+    raise TesseractError(proc.returncode, get_errors(error_string))
+pytesseract.pytesseract.TesseractError: (1, "Error: Tesseract (legacy) engine requested, but components are not present in /usr/share/tesseract-ocr/4.00/tessdata/name_adcbp.traineddata!! Failed loading language 'name_adcbp' Tesseract couldn't load any languages! Could not initialize tesseract.")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 213, in recognize_character
+    raise TesseractLanguageException("Verify Name/surname model language is available in the right path")
+logger.custom_exceptions.TesseractLanguageException: Tesseract Language Exception: Verify Name/surname model language is available in the right path
+
+[2021-07-15 12:51:02,966][TID-139681482131200][DEBUG][logger.exception_handler:44]-final output: {'error_no': '105', 'error_description': 'Name/Surname is missing in the tesseract'}
+[2021-07-15 12:54:20,137][TID-139681482131200][INFO][pid.main:33]-Entered request_handler
+[2021-07-15 12:54:20,137][TID-139681482131200][INFO][pid.main:33]-Model loaded successfully
+[2021-07-15 12:54:20,137][TID-139681482131200][INFO][pid.main:33]-Request Received successfully
+[2021-07-15 12:54:20,137][TID-139681482131200][DEBUG][pid.main:44]-Request data: {'img_path': '/home/intellect/projects/OD_ssd/clear_test_images/images/Anand_Agrawal _front.jpg', 'reference_number': '1'}
+[2021-07-15 12:54:20,137][TID-139681482131200][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 12:54:20,145][TID-139681482131200][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 12:54:20,145][TID-139681482131200][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 12:54:20,408][TID-139681482131200][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 12:54:20,409][TID-139681482131200][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 12:54:20,409][TID-139681482131200][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 12:54:20,409][TID-139681482131200][DEBUG][pid.main:44]-Model1 prediction: defaultdict(<class 'list'>, {'surname': [0.9986779, [0.18888342, 0.36142448, 0.240104, 0.48475507]], 'mrz_region': [0.9955708, [0.7527873, 0.034012705, 0.8962717, 0.96754146]], 'name': [0.7182891, [0.2732732, 0.36093956, 0.3229973, 0.5899349]]})
+[2021-07-15 12:54:20,409][TID-139681482131200][INFO][pid.od_predict:33]-Entered predict
+[2021-07-15 12:54:20,417][TID-139681482131200][INFO][pid.od_predict:33]-Image read successfully for predict
+[2021-07-15 12:54:20,418][TID-139681482131200][INFO][pid.od_predict:33]-Entered run_inference_for_single_image
+[2021-07-15 12:54:20,459][TID-139681482131200][INFO][pid.od_predict:33]-Exited run_inference_for_single_image
+[2021-07-15 12:54:20,459][TID-139681482131200][INFO][pid.od_predict:33]-ROI coordinates for single image: obtained successsfully
+[2021-07-15 12:54:20,459][TID-139681482131200][INFO][pid.od_predict:33]-Exited predict
+[2021-07-15 12:54:20,459][TID-139681482131200][DEBUG][pid.main:44]-Model2 prediction: defaultdict(<class 'list'>, {'mrz_region': [0.9817201, [0.75189924, 0.04905823, 0.8993137, 0.9516034]], 'surname': [0.964985, [0.19364825, 0.35502112, 0.24012238, 0.4825772]], 'name': [0.95500076, [0.27203548, 0.3566473, 0.32471448, 0.5890242]]})
+[2021-07-15 12:54:20,459][TID-139681482131200][INFO][pid.od_predict:33]-Entered combine_models
+[2021-07-15 12:54:20,459][TID-139681482131200][INFO][pid.od_predict:33]-Exited combine_models
+[2021-07-15 12:54:20,459][TID-139681482131200][DEBUG][pid.main:44]-Model1 and model2 prediction combined: {'surname': [0.18888342, 0.36142448, 0.240104, 0.48475507], 'mrz_region': [0.7527873, 0.034012705, 0.8962717, 0.96754146], 'name': [0.27203548, 0.3566473, 0.32471448, 0.5890242]}
+[2021-07-15 12:54:20,459][TID-139681482131200][INFO][pid.od_predict:33]-Entered recognize_character
+[2021-07-15 12:54:20,463][TID-139681482131200][INFO][pid.od_predict:33]-Image read successfully for recognize_character
+[2021-07-15 12:54:20,541][TID-139681482131200][ERROR][logger.exception_handler:55]-Tesseract Language Exception: Verify Name/surname model language is available in the right path
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 211, in recognize_character
+    ocr[labels] = pytesseract.image_to_string(cropped_surname,lang='name_adcbp')
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 413, in image_to_string
+    }[output_type]()
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 412, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 287, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "/home/intellect/anaconda3/envs/craft/lib/python3.6/site-packages/pytesseract/pytesseract.py", line 263, in run_tesseract
+    raise TesseractError(proc.returncode, get_errors(error_string))
+pytesseract.pytesseract.TesseractError: (1, "Error: Tesseract (legacy) engine requested, but components are not present in /usr/share/tesseract-ocr/4.00/tessdata/name_adcbp.traineddata!! Failed loading language 'name_adcbp' Tesseract couldn't load any languages! Could not initialize tesseract.")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/main.py", line 61, in request_handler
+    final_output = recognize_character(combine, img)
+  File "/home/intellect/projects/OD_ssd/passport_ocr/pid/od_predict.py", line 213, in recognize_character
+    raise TesseractLanguageException("Verify Name/surname model language is available in the right path")
+logger.custom_exceptions.TesseractLanguageException: Tesseract Language Exception: Verify Name/surname model language is available in the right path
+
+[2021-07-15 12:54:20,541][TID-139681482131200][DEBUG][logger.exception_handler:44]-final output: {'error_no': '105', 'error_description': 'Name/Surname is missing in the tesseract'}
